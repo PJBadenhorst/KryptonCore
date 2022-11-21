@@ -32,7 +32,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #endregion
 
         #region Instance Fields
-        private Timer _animationTimer;
+        private System.Windows.Forms.Timer _animationTimer;
         private IPaletteMetric _paletteMetrics;
         private PaletteMetricPadding _metricPadding;
         private PaletteMetricInt _metricOvers;
@@ -90,7 +90,7 @@ namespace ComponentFactory.Krypton.Toolkit
             _counterAlignment = RelativePositionAlign.Far;
 
             // Create a timer for animation effect
-            _animationTimer = new Timer();
+            _animationTimer = new System.Windows.Forms.Timer();
             _animationTimer.Interval = _animationInterval;
             _animationTimer.Tick += new EventHandler(OnAnimationTick);
 		}

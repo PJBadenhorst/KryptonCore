@@ -172,7 +172,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private RowHeaderCache _rowCache;
         private Point _cellOver;
         private Point _cellDown;
-        private Timer _showTimer;
+        private System.Windows.Forms.Timer _showTimer;
         private bool _hideOuterBorders;
         private bool _showCellToolTips;
         private string _toolTipText;
@@ -1537,7 +1537,7 @@ namespace ComponentFactory.Krypton.Toolkit
             _gridSyles = new DataGridViewStyles(this);
             _columnCache = new ColumnHeaderCache();
             _rowCache = new RowHeaderCache();
-            _showTimer = new Timer();
+            _showTimer = new System.Windows.Forms.Timer();
             _showTimer.Interval = 500;
             _showTimer.Tick += new EventHandler(OnTimerTick);
 

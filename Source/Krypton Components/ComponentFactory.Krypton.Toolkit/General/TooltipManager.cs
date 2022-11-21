@@ -23,8 +23,8 @@ namespace ComponentFactory.Krypton.Toolkit
     public class ToolTipManager
     {
         #region Instance Fields
-        private Timer _startTimer;
-        private Timer _stopTimer;
+        private System.Windows.Forms.Timer _startTimer;
+        private System.Windows.Forms.Timer _stopTimer;
         private ViewBase _startTarget;
         private ViewBase _currentTarget;
         private bool _showingToolTips;
@@ -48,11 +48,11 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         public ToolTipManager()
         {
-            _startTimer = new Timer();
+            _startTimer = new System.Windows.Forms.Timer();
             _startTimer.Interval = 1200;
             _startTimer.Tick += new EventHandler(OnStartTimerTick);
 
-            _stopTimer = new Timer();
+            _stopTimer = new System.Windows.Forms.Timer();
             _stopTimer.Interval = 100;
             _stopTimer.Tick += new EventHandler(OnStopTimerTick);
         }

@@ -8,26 +8,14 @@
 //  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
-using System;
-using System.Data;
-using System.Text;
-using System.Drawing;
-using System.Drawing.Text;
-using System.Drawing.Imaging;
-using System.Drawing.Drawing2D;
-using System.Windows.Forms;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using Microsoft.Win32;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
-    /// <summary>
-    /// Provide a context menu image select.
-    /// </summary>
-    [ToolboxItem(false)]
+	/// <summary>
+	/// Provide a context menu image select.
+	/// </summary>
+	[ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonContextMenuImageSelect), "ToolboxBitmaps.KryptonContextMenuImageSelect.bmp")]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
@@ -47,7 +35,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private int _trackingIndex;
         private int _cacheTrackingIndex;
         private int _eventTrackingIndex;
-        private Timer _trackingEventTimer;
+        private System.Windows.Forms.Timer _trackingEventTimer;
         #endregion
 
         #region Events
@@ -83,7 +71,7 @@ namespace ComponentFactory.Krypton.Toolkit
             _style = ButtonStyle.LowProfile;
 
             // Timer used to generate tracking change event
-            _trackingEventTimer = new Timer();
+            _trackingEventTimer = new System.Windows.Forms.Timer();
             _trackingEventTimer.Interval = 120;
             _trackingEventTimer.Tick += new EventHandler(OnTrackingTick);
         }

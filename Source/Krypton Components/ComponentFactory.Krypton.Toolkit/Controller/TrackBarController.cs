@@ -26,7 +26,7 @@ namespace ComponentFactory.Krypton.Toolkit
 	{
 		#region Instance Fields
         private ViewDrawTP _drawTB;
-        private Timer _repeatTimer;
+        private System.Windows.Forms.Timer _repeatTimer;
         private bool _captured;
         private bool _targetHigher;
         private int _targetValue;
@@ -116,7 +116,7 @@ namespace ComponentFactory.Krypton.Toolkit
                     OnRepeatTimer(_repeatTimer, EventArgs.Empty);
 
                     // Use timer to keep moving towards the target value
-                    _repeatTimer = new Timer();
+                    _repeatTimer = new System.Windows.Forms.Timer();
                     _repeatTimer.Interval = SystemInformation.DoubleClickTime;
                     _repeatTimer.Tick += new EventHandler(OnRepeatTimer);
                     _repeatTimer.Start();
