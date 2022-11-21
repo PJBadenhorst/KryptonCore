@@ -28,7 +28,7 @@ namespace ComponentFactory.Krypton.Docking
         private KryptonFloatingWindow _window;
         private Point _offset;
         private Point _screenPt;
-        private Timer _moveTimer;
+        private System.Windows.Forms.Timer _moveTimer;
         private bool _addedFilter;
         private bool _monitorMouse;
         #endregion
@@ -45,7 +45,7 @@ namespace ComponentFactory.Krypton.Docking
             _offset = Point.Empty;
 
             // Use timer to ensure we do not update the display too quickly which then causes tearing
-            _moveTimer = new Timer();
+            _moveTimer = new System.Windows.Forms.Timer();
             _moveTimer.Interval = 10;
             _moveTimer.Tick += new EventHandler(OnFloatingWindowMove);
         }
