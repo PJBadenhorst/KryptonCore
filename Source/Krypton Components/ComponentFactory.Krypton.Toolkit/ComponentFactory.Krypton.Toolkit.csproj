@@ -11,7 +11,119 @@
     <Description>ComponentFactory.Krypton.Toolkit</Description>
     <Title>ComponentFactory.Krypton.Toolkit</Title>
     <Product>Krypton Toolkit</Product>
-    <Version>4.6.0.0</Version>    
+    <Version>4.6.0.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Krypton.ico" />
+    <None Remove="ToolboxBitmaps\KryptonBorderEdge.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonBreadCrumb.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonBreadCrumbItem.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonButton.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonButtonSpec.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonCheckBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonCheckButton.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonCheckedListBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonCheckSet.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonColorButton.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonComboBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonCommand.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenu.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuColorColumns.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuHeading.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuImageSelect.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuItem.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuItems.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonContextMenuSeparator.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonDataGridView.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonDateTimePicker.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonDomainUpDown.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonDropButton.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonForm.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonGroup.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonGroupBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonGroupPanel.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonHeader.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonHeaderGroup.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonInputBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonLabel.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonLinkLabel.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonListBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonManager.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonMaskedTextBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonMessageBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonMonthCalendar.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonNumericUpDown.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonPalette.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonPanel.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonRadioButton.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonRichTextBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonSeparator.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonSplitContainer.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonTaskDialog.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonTaskDialogCommand.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonTextBox.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonTrackBar.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonTreeView.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonWrapLabel.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBorderEdge.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumb.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumbItem.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonButtonSpec.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckedListBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckSet.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonColorButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonComboBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCommand.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenu.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuColorColumns.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuHeading.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuImageSelect.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItem.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItems.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuSeparator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDataGridView.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDateTimePicker.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDomainUpDown.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDropButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonForm.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroup.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupPanel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonHeader.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonHeaderGroup.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonInputBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonLabel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonLinkLabel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonListBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonManager.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMaskedTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMessageBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMonthCalendar.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonNumericUpDown.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonPalette.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonPanel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonRadioButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonRichTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonSeparator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonSplitContainer.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialog.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialogCommand.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTrackBar.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTreeView.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWrapLabel.bmp" />
+  </ItemGroup>
 
 </Project>
