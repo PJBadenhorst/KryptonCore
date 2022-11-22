@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Na
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Workspace", "ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace.csproj", "{B2AFF886-4CCD-4958-B89F-14FE590AD961}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComponentFactory.Krypton.Ribbon", "ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon.csproj", "{2496299A-F632-4126-9D79-203242F06C8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B2AFF886-4CCD-4958-B89F-14FE590AD961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2AFF886-4CCD-4958-B89F-14FE590AD961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2AFF886-4CCD-4958-B89F-14FE590AD961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2496299A-F632-4126-9D79-203242F06C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2496299A-F632-4126-9D79-203242F06C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2496299A-F632-4126-9D79-203242F06C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2496299A-F632-4126-9D79-203242F06C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
