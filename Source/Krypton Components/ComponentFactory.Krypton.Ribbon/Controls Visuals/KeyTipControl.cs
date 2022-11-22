@@ -251,7 +251,7 @@ namespace ComponentFactory.Krypton.Ribbon
         private void StartTimer()
         {
             // Start timer to take care of re drawing the display
-            Timer redrawTimer = new Timer();
+            System.Windows.Forms.Timer redrawTimer = new System.Windows.Forms.Timer();
             redrawTimer.Interval = 1;
             redrawTimer.Tick += new EventHandler(OnRedrawTick);
             redrawTimer.Start();
@@ -259,7 +259,7 @@ namespace ComponentFactory.Krypton.Ribbon
 
         private void OnRedrawTick(object sender, EventArgs e)
         {
-            Timer redrawTimer = (Timer)sender;
+            System.Windows.Forms.Timer redrawTimer = (System.Windows.Forms.Timer)sender;
             redrawTimer.Stop();
             redrawTimer.Dispose();
 

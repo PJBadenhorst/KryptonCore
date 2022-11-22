@@ -83,7 +83,7 @@ namespace ComponentFactory.Krypton.Ribbon
         private ButtonSpecManagerLayoutRibbon _buttonManager;
 
         // Monitoring the containing form and mdi status
-        private Timer _invalidateTimer;
+        private System.Windows.Forms.Timer _invalidateTimer;
         private Form _formContainer;
         private Form _activeMdiChild;
         private int _paintCount;
@@ -568,7 +568,7 @@ namespace ComponentFactory.Krypton.Ribbon
             // required to get the pendant buttons to operate as needed.
             _ribbon.ParentChanged += new EventHandler(OnRibbonParentChanged);
 
-            _invalidateTimer = new Timer();
+            _invalidateTimer = new System.Windows.Forms.Timer();
             _invalidateTimer.Interval = 1;
             _invalidateTimer.Tick += new EventHandler(OnRedrawTick);
         }
