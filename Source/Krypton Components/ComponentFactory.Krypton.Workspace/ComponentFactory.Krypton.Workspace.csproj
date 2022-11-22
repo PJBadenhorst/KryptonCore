@@ -11,7 +11,8 @@
     <Description>ComponentFactory.Krypton.Workspace</Description>
     <Title>ComponentFactory.Krypton.Workspace</Title>
     <Product>Krypton Workspace</Product>
-    <Version>4.6.0.0</Version>    
+    <Version>4.6.0.0</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +28,23 @@
     <None Remove="Licence Install\**" />
     <None Remove="Palette Demo\**" />
     <None Remove="Palette Install\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Krypton.ico" />
+    <None Remove="ToolboxBitmaps\KryptonWorkspace.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonWorkspaceCell.bmp" />
+    <None Remove="ToolboxBitmaps\KryptonWorkspaceSequence.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspace.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceCell.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceSequence.bmp" />
   </ItemGroup>
 
   <ItemGroup>
