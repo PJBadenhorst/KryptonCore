@@ -41,7 +41,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private Point _mousePoint;
         private ViewBase _target;
 		private NeedPaintHandler _needPaint;
-        private Timer _repeatTimer;
+        private System.Windows.Forms.Timer _repeatTimer;
         private Rectangle _splitRectangle;
         private Rectangle _dragRect;
         private object _tag;
@@ -355,7 +355,7 @@ namespace ComponentFactory.Krypton.Toolkit
                                 // If we need to perform click repeats then use a timer...
                                 if (Repeat)
                                 {
-                                    _repeatTimer = new Timer();
+                                    _repeatTimer = new System.Windows.Forms.Timer();
                                     _repeatTimer.Interval = SystemInformation.DoubleClickTime;
                                     _repeatTimer.Tick += new EventHandler(OnRepeatTimer);
                                     _repeatTimer.Start();
@@ -947,7 +947,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private void OnRepeatTimer(object sender, EventArgs e)
         {
             // Modify subsequent repeat timing
-            Timer t = (Timer)sender;
+            System.Windows.Forms.Timer t = (System.Windows.Forms.Timer)sender;
             t.Interval = Math.Max(SystemInformation.DoubleClickTime / 4, 100);
             OnClick(new MouseEventArgs(MouseButtons.Left, 1, 0, 0, 0));
         }

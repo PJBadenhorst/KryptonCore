@@ -1,7 +1,4 @@
 build
-obj/
-bin/
-.vs
 
 # Windows image file caches
 Thumbs.db
@@ -46,3 +43,17 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.suo
+
+/**/packages/**/*
+/**/bin/*
+/**/obj/*
+/**/node_modules/*
+launch.json
+*.suo
+*.user
+.vs
+.vs/config/applicationhost.config
+*.orig
+/.nuget/-ApiKey
+.idea/
+*.Cache

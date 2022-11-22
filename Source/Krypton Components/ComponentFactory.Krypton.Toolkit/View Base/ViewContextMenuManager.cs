@@ -31,7 +31,7 @@ namespace ComponentFactory.Krypton.Toolkit
         #region Instance Fields
         private IContextMenuTarget _target;
         private IContextMenuTarget _targetSubMenu;
-        private Timer _itemDelayTimer;
+        private System.Windows.Forms.Timer _itemDelayTimer;
         #endregion
 
         #region Identity
@@ -44,7 +44,7 @@ namespace ComponentFactory.Krypton.Toolkit
             : base(control, root)
 		{
             // Create timer to notify targets when the standard delay expires
-            _itemDelayTimer = new Timer();
+            _itemDelayTimer = new System.Windows.Forms.Timer();
             _itemDelayTimer.Interval = Math.Max(1, SystemInformation.MenuShowDelay);
             _itemDelayTimer.Tick += new EventHandler(OnDelayTimerExpire);
 		}

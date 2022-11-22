@@ -36,7 +36,7 @@ namespace ComponentFactory.Krypton.Ribbon
         private PaletteTripleToPalette _triple;
         private KryptonGallery _gallery;
         private ButtonStyle _style;
-        private Timer _scrollTimer;
+        private System.Windows.Forms.Timer _scrollTimer;
         private Size _itemSize;
         private int _lineItems;
         private int _displayLines;
@@ -94,7 +94,7 @@ namespace ComponentFactory.Krypton.Ribbon
                                                  PaletteContentStyle.ButtonLowProfile);
 
             // Setup timer to use for scrolling lines
-            _scrollTimer = new Timer();
+            _scrollTimer = new System.Windows.Forms.Timer();
             _scrollTimer.Interval = 40;
             _scrollTimer.Tick += new EventHandler(OnScrollTick);
         }

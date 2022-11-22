@@ -45,7 +45,7 @@ namespace ComponentFactory.Krypton.Toolkit
         private PaletteSeparatorPadding _stateTracking;
         private PaletteSeparatorPadding _statePressed;
         private Orientation _orientation;
-        private Timer _redrawTimer;
+        private System.Windows.Forms.Timer _redrawTimer;
         private Point _designLastPt;
         private int _splitterWidth;
         private int _splitterIncrements;
@@ -166,7 +166,7 @@ namespace ComponentFactory.Krypton.Toolkit
             ViewManager = new ViewManager(this, _drawDocker);
 
             // Use timer to redraw after windows messages are processed
-            _redrawTimer = new Timer();
+            _redrawTimer = new System.Windows.Forms.Timer();
             _redrawTimer.Interval = 1;
             _redrawTimer.Tick += new EventHandler(OnRedrawTick);
 

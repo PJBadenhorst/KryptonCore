@@ -36,7 +36,7 @@ namespace ComponentFactory.Krypton.Ribbon
         private bool _fixedPressed;
         private bool _hasFocus;
         private bool _keyboard;
-        private Timer _updateTimer;
+        private System.Windows.Forms.Timer _updateTimer;
         #endregion
 
         #region Events
@@ -63,7 +63,7 @@ namespace ComponentFactory.Krypton.Ribbon
         public AppButtonController(KryptonRibbon ribbon)
 		{
             _ribbon = ribbon;
-            _updateTimer = new Timer();
+            _updateTimer = new System.Windows.Forms.Timer();
             _updateTimer.Interval = 1;
             _updateTimer.Tick += new EventHandler(OnUpdateTimer);
             _keyboard = false;

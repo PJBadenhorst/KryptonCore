@@ -17,16 +17,7 @@ using System.Security.Permissions;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("4.6.0.0")]
-[assembly: AssemblyFileVersion("4.6.0.0")]
-[assembly: AssemblyCopyright("© Component Factory Pty Ltd 2012. All rights reserved.")]
-[assembly: AssemblyInformationalVersion("4.6.0.0")]
-[assembly: AssemblyProduct("Navigator + FloatingWindows")]
 [assembly: AssemblyDefaultAlias("NavigatorAndFloatingWindows.dll")]
-[assembly: AssemblyTitle("Navigator + FloatingWindows")]
-[assembly: AssemblyCompany("Component Factory")]
-[assembly: AssemblyDescription("Navigator + FloatingWindows")]
-[assembly: AssemblyConfiguration("Production")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(false)]

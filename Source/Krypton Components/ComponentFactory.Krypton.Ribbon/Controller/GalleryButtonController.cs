@@ -28,7 +28,7 @@ namespace ComponentFactory.Krypton.Ribbon
         private bool _pressed;
         private bool _mouseOver;
 		private NeedPaintHandler _needPaint;
-        private Timer _repeatTimer;
+        private System.Windows.Forms.Timer _repeatTimer;
         #endregion
 
 		#region Events
@@ -56,7 +56,7 @@ namespace ComponentFactory.Krypton.Ribbon
 
             if (repeatTimer)
             {
-                _repeatTimer = new Timer();
+                _repeatTimer = new System.Windows.Forms.Timer();
                 _repeatTimer.Interval = 250;
                 _repeatTimer.Tick += new EventHandler(OnRepeatTick);
             }

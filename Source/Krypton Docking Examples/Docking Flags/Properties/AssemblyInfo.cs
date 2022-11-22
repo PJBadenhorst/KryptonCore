@@ -17,16 +17,7 @@ using System.Security.Permissions;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyVersion("4.6.0.0")]
-[assembly: AssemblyFileVersion("4.6.0.0")]
-[assembly: AssemblyCopyright("© Component Factory Pty Ltd 2012. All rights reserved.")]
-[assembly: AssemblyInformationalVersion("4.6.0.0")]
-[assembly: AssemblyProduct("Docking Flags")]
 [assembly: AssemblyDefaultAlias("DockingFlags.dll")]
-[assembly: AssemblyTitle("Docking Flags")]
-[assembly: AssemblyCompany("Component Factory")]
-[assembly: AssemblyDescription("Docking Flags")]
-[assembly: AssemblyConfiguration("Production")]
 [assembly: NeutralResourcesLanguage("en-US")]
 [assembly: StringFreezing]
 [assembly: ComVisible(false)]
